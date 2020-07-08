@@ -3,10 +3,10 @@ import { badRequest, serverError, unauthorized, ok } from '../../helpers/http/ht
 import { Validation } from '../signup/signup-protocols-controller'
 
 export class LoginController implements Controller {
-  private readonly authentication: Authentication
-  private readonly validation: Validation
-
-  constructor (authentication: Authentication, validation: Validation) {
+  constructor (
+    private readonly authentication: Authentication,
+    private readonly validation: Validation
+  ) {
     this.authentication = authentication
     this.validation = validation
   }
