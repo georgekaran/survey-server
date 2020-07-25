@@ -12,6 +12,9 @@
 <br/>
 <br/>
 
+[![Build Status](https://travis-ci.com/georgekaran/survey.go.svg?branch=master)](https://travis-ci.com/georgekaran/survey.go)
+[![Coverage Status](https://coveralls.io/repos/github/georgekaran/survey.go/badge.svg?branch=master)](https://coveralls.io/github/georgekaran/survey.go?branch=master)
+
 # Survey.go
 
 Survey MERN application built using TDD, Clean Architecture and SOLID. 
