@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sucrase-node src/main/server.ts",
+    "start": "node dist/main/server.js",
+    "build": "tsc -p tsconfig-build.json",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
@@ -39,7 +40,6 @@
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "mockdate": "^3.0.2",
-    "sucrase": "^3.15.0",
     "supertest": "^4.0.2",
     "ts-jest": "^26.1.1",
     "typescript": "^3.9.6"
@@ -49,7 +49,11 @@
     "express": "^4.17.1",
     "fast-glob": "^3.2.4",
     "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
     "mongodb": "^3.5.9",
     "validator": "^13.1.1"
+  },
+  "_moduleAliases": {
+    "@": "dist"
   }
 }
