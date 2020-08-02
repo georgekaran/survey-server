@@ -10,7 +10,8 @@ import {
   signUpParamsSchema,
   addSurveyParamsSchema,
   saveSurveyParamsSchema,
-  surveyResultSchema
+  surveyResultSchema,
+  surveyResultAnswerSchema
 } from './schemas'
 import { badRequest, serverError, unauthorized, notFound, forbidden } from './components'
 
@@ -49,7 +50,8 @@ export default {
     signUpParams: signUpParamsSchema,
     addSurveyParams: addSurveyParamsSchema,
     saveSurveyResultParams: saveSurveyParamsSchema,
-    surveyResult: surveyResultSchema
+    surveyResult: surveyResultSchema,
+    surveyResultAnswer: surveyResultAnswerSchema
   },
   components: {
     securitySchemes: {
