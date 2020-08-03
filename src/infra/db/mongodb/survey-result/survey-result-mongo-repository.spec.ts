@@ -13,7 +13,7 @@ const makeSut = (): SurveyResultMongoRepository => {
 }
 
 const makeAccount = async (): Promise<AccountModel> => {
-  const res = await surveyCollection.insertOne({
+  const res = await accountCollection.insertOne({
     name: 'any_name',
     email: 'any_email@mail.com',
     password: 'any_password'
