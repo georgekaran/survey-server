@@ -55,7 +55,8 @@ describe('SignUp Controller', () => {
     expect(addSpy).toHaveBeenCalledWith({
       name: 'any_name',
       email: 'valid_email@mail.com',
-      password: 'any_password'
+      password: 'any_password',
+      role: 'user'
     })
   })
 
